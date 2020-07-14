@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ZXKJFeedbackCell" id="ueW-DS-f6y" customClass="ZXKJFeedbackCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="360"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ueW-DS-f6y" id="Bbb-ch-Ms4">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="360"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gDX-t5-XLv" userLabel="topView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="建议与反馈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rms-pV-3iP">
+                                <rect key="frame" x="13" y="16" width="76.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rms-pV-3iP" firstAttribute="centerY" secondItem="gDX-t5-XLv" secondAttribute="centerY" id="0Lt-gw-X4f"/>
+                            <constraint firstAttribute="height" constant="50" id="CSl-nU-Dve"/>
+                            <constraint firstItem="rms-pV-3iP" firstAttribute="leading" secondItem="gDX-t5-XLv" secondAttribute="leading" constant="13" id="fpu-Sc-bpJ"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nkV-AE-uhV">
+                        <rect key="frame" x="0.0" y="50" width="375" height="210"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uxk-FW-cSb" customClass="LSPlaceholderTextView">
+                                <rect key="frame" x="10" y="0.0" width="355" height="175"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="175" id="jTS-EQ-TtJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorWithUIColor">
+                                        <color key="value" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/500" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATz-Sf-mls">
+                                <rect key="frame" x="330.5" y="182" width="34.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uxk-FW-cSb" firstAttribute="top" secondItem="nkV-AE-uhV" secondAttribute="top" id="56C-sI-LEl"/>
+                            <constraint firstItem="uxk-FW-cSb" firstAttribute="leading" secondItem="nkV-AE-uhV" secondAttribute="leading" constant="10" id="KGM-hS-Efh"/>
+                            <constraint firstAttribute="height" constant="210" id="NMk-MI-Kpu"/>
+                            <constraint firstItem="ATz-Sf-mls" firstAttribute="top" secondItem="uxk-FW-cSb" secondAttribute="bottom" constant="7" id="bUl-WO-owl"/>
+                            <constraint firstAttribute="trailing" secondItem="uxk-FW-cSb" secondAttribute="trailing" constant="10" id="pFC-vE-R9c"/>
+                            <constraint firstItem="ATz-Sf-mls" firstAttribute="trailing" secondItem="uxk-FW-cSb" secondAttribute="trailing" id="tzM-vI-Mg2"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5C-P8-8DE">
+                        <rect key="frame" x="33" y="316" width="309" height="40"/>
+                        <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="ewv-7t-67k"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="提交"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="submitButtonAction" destination="ueW-DS-f6y" eventType="touchUpInside" id="Eid-qB-L9x"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="x5C-P8-8DE" firstAttribute="top" secondItem="nkV-AE-uhV" secondAttribute="bottom" constant="56" id="9bk-OL-WeO"/>
+                    <constraint firstAttribute="trailing" secondItem="nkV-AE-uhV" secondAttribute="trailing" id="JGB-uO-2dc"/>
+                    <constraint firstItem="gDX-t5-XLv" firstAttribute="top" secondItem="Bbb-ch-Ms4" secondAttribute="top" id="Sso-HZ-LL2"/>
+                    <constraint firstAttribute="trailing" secondItem="x5C-P8-8DE" secondAttribute="trailing" constant="33" id="bbb-R5-bEN"/>
+                    <constraint firstItem="nkV-AE-uhV" firstAttribute="top" secondItem="gDX-t5-XLv" secondAttribute="bottom" id="gQA-0E-jFO"/>
+                    <constraint firstAttribute="trailing" secondItem="gDX-t5-XLv" secondAttribute="trailing" id="i6M-P7-Jd8"/>
+                    <constraint firstItem="nkV-AE-uhV" firstAttribute="leading" secondItem="Bbb-ch-Ms4" secondAttribute="leading" id="oMj-KL-cXP"/>
+                    <constraint firstItem="x5C-P8-8DE" firstAttribute="leading" secondItem="Bbb-ch-Ms4" secondAttribute="leading" constant="33" id="qKh-Th-SiZ"/>
+                    <constraint firstItem="gDX-t5-XLv" firstAttribute="leading" secondItem="Bbb-ch-Ms4" secondAttribute="leading" id="u2V-gK-apC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="submitButton" destination="x5C-P8-8DE" id="p4H-Vq-oOf"/>
+                <outlet property="textView" destination="uxk-FW-cSb" id="VVf-D4-3kA"/>
+                <outlet property="wordCountLabel" destination="ATz-Sf-mls" id="yWz-aN-nhX"/>
+            </connections>
+            <point key="canvasLocation" x="64" y="43"/>
+        </tableViewCell>
+    </objects>
+</document>
